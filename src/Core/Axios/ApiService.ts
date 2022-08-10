@@ -3,7 +3,7 @@ import axios, { AxiosRequestConfig } from 'axios';
 const ApiService = {
   init(baseURL?: any, authToken?: any) {
     axios.defaults.baseURL = baseURL;
-    axios.defaults.headers.common = { Authorization: `Bearer ${authToken}` };
+    // axios.defaults.headers.common = { Authorization: `Bearer ${authToken}` };
   },
   getBaseUrl() {
     return axios.defaults.baseURL;

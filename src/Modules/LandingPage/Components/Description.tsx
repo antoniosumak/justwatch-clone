@@ -6,7 +6,7 @@ interface IDescription {
 
 const Description = ({description}: IDescription) => {
 
-  return (<p className="my-[30px] text-linkcolor">{description}</p>);
+  return (<p className="my-[30px] text-center lg:text-start text-linkcolor">{description}</p>);
 };
 
 export default Description;

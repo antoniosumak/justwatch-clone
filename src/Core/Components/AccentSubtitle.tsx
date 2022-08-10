@@ -6,7 +6,7 @@ interface IActionSubtitle {
 
 const AccentSubtitle = ({subtitle}: IActionSubtitle) => {
   return (
-      <h6 className="text-[13px] text-primary font-bold tracking-[2.5px] my-[2rem]">{subtitle}</h6>
+      <h6 className="text-[13px] text-center lg:text-start text-primary font-bold tracking-[2.5px] my-[2rem]">{subtitle}</h6>
   );
 };
 

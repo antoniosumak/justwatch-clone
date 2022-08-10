@@ -6,13 +6,14 @@ interface IImage {
     alt: string;
     imageSource: string;
     additionalClass?: string;
+    method?: Function
 }
 
-const Image = ({width,height,alt, imageSource, additionalClass}: IImage) => {
+const Image = ({width,height,alt, imageSource, additionalClass, method}: IImage) => {
 
   return (
       <figure className={`${width} ${height} ${additionalClass} overflow-hidden`}>
-          <img className="w-full h-full object-fill" src={imageSource} alt={alt} loading="lazy"/>
+          <img className=" w-full h-full object-fit" src={imageSource} alt={alt} onClick={(e)=>method && method(e)} />
       </figure>
   );
 };

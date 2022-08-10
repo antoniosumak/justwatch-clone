@@ -27,7 +27,7 @@ const LandingIndex = ({}: ILandingIndex) => {
   return (
     <>
       <Section hasImage>
-        <Grid numberOfColumns={2}>
+        <Grid dontCenter numberOfColumns={2}>
           <div>
             <HeroTitle title='Sve vaše platforme za streaming u jednoj aplikaciji.' />
             <Description description='Dobijte personalizirane preoporuke za filmove i serije dostupne na platformi Netflix, Amazon Prime Video, Ivi i još mnogo toga.' />
@@ -48,9 +48,6 @@ const LandingIndex = ({}: ILandingIndex) => {
               alt='Television image'
               imageSource={Television}
             />
-            <div className='absolute top-[33px]  left-[180px] w-[1100px] text-white'>
-              <CarouselComponent />
-            </div>
           </div>
         </Grid>
       </Section>
